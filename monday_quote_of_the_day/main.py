@@ -2,8 +2,8 @@ import smtplib
 import datetime as dt
 import random
 
-MY_EMAIL = "test.email4coding@gmail.com"
-MY_PASSWORD = "fiwkgqlgifcjujij"
+MY_EMAIL = #EMAIL
+MY_PASSWORD = #PASSWORD
 
 now = dt.datetime.now()
 day_of_week = now.weekday()
@@ -17,6 +17,6 @@ with open("quotes.txt", "r") as file:
             connection.login(user=MY_EMAIL, password=MY_PASSWORD)
             connection.sendmail(
                 from_addr=MY_EMAIL,
-                to_addrs="test_email123@myyahoo.com",
+                to_addrs= #DESTINATION ADDRESS,
                 msg=f"Subject: Quote of the Day\n\n{random_quote}"
                 )
